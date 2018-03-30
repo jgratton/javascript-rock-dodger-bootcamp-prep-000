@@ -122,7 +122,7 @@ function endGame() {
   ROCKS.forEach(function(rock) { rock.remove() });
 
   //keydown.preventDefault();
-  keyboardEvent.removeEventListener( 'keydown', moveDodger );
+  KeyboardEvent.removeEventListener( 'keydown', moveDodger );
 
   START.innerHTML = 'Play again?';
   START.style.display = 'inline';
